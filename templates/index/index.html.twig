@@ -1,0 +1,155 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IndexController!{% endblock %}
+
+{% block body %}
+    <div class="container-fluid bg-light">
+        <div class="row">
+            <ul class="steps">
+                <li class="step step-active">
+                    <div class="step-content">
+                        <span class="step-circle">1</span>
+                        <span class="step-text">Step 1</span>
+                    </div>
+                </li>
+                <li class="step">
+                    <div class="step-content">
+                        <span class="step-circle">2</span>
+                        <span class="step-text">Step 2</span>
+                    </div>
+                </li>
+                <li class="step">
+                    <div class="step-content">
+                        <span class="step-circle">3</span>
+                        <span class="step-text">Step 3</span>
+                    </div>
+                </li>
+                <li class="step">
+                    <div class="step-content">
+                        <span class="step-circle">4</span>
+                        <span class="step-text">Step 4</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div class="row ">
+            <div class="card col col-12" style="padding: 30px;">
+                <div class="row">
+                    <div class="row">
+                        <h2>title</h2>
+                    </div>
+                    <div class="image col col-6" style="border: 1px solid #bdc3c7;border-radius: 3px;height: 350px;">
+
+                        <div class="row">
+                            <img src="http://img.cdn.asandl.com/software/utilities/system/NTLite.jpg" height="300" alt="Flowers in Chania">
+                        </div>
+                    </div>
+                    <div class="col col-6 pro-height">
+                        <form action="#">
+                            <div class="mb-3">
+                                <label for="type" class="form-label">Container Type*</label>
+                                <select class="form-select" id="type" aria-label="Default select example">
+                                    <label for="mySelect">Container Type</label>
+                                    <option id="mySelect" selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Quantity*</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary btn-sm" type="button">+ Add To Order</button>
+                            </div>
+                            <br>
+                            <div class="mb-3">
+                                <div class="alert alert-warning" style="height: 120px;text-align: center;border: 1px solid #f1c40f;" role="alert">
+                                    <h4>this is a title</h4>
+                                    <button type="button" class="btn btn-warning btn-sm">Click here</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h2>Your Orders</h2>
+        </div>
+        <div class="row ">
+            <div class="card col col-12" style="padding: 30px;">
+                <div class="row">
+
+                    <div class="image col col-3">
+
+                        <div class="row">
+                            <img src="http://img.cdn.asandl.com/software/utilities/system/NTLite.jpg" alt="Flowers in Chania">
+                        </div>
+                    </div>
+                    <div class="image col col-3">
+                        <div class="row">
+                        <label for="exampleFormControlInput1" class="form-label">Container*</label>
+                        <select class="form-select" id="type" aria-label="Default select example">
+                            <label for="mySelect">Container Type</label>
+                            <option id="mySelect" selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        </div>
+                        <div class="row">
+                            <p>Tare weight per unit</p>
+                            <p>0 kg</p>
+                        </div>
+                    </div>
+                    <div class="image col col-3">
+
+                        <label for="exampleFormControlInput1" class="form-label">Quantity*</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="image col col-2">
+
+                        <label for="exampleFormControlInput1" class="form-label">Temp.range*</label>
+                        <select class="form-select" id="type" aria-label="Default select example">
+                            <label for="mySelect">Container Type</label>
+                            <option id="mySelect" selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+
+
+                    <div class="image col col-1" style="padding: 10px;">
+
+                        <p style="color: red;margin-top: 30px;">Remove x</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-4">
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-lg btn-secondary">Cancel Order</button>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-lg btn-dark">Save To Draft</button>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-lg btn-primary">Next</button>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+{% endblock %}
